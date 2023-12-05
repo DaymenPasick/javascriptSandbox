@@ -21,3 +21,12 @@ console.log(pokemonArray)
 //Console log is (2)[Pokemon, Pokemon]
 
 
+var nameEntry = document.getElementById("form")
+nameEntry.addEventListener('keypress', function(event){
+    if (event.key === 'Enter'){
+    event.preventDefault();
+    var pokeName = document.getElementById("name").value;
+    console.log(pokeName)
+    event.currentTarget.value = "";
+  }
+})
