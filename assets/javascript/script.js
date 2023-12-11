@@ -35,15 +35,22 @@
 
 
 
-class Person {
-    talk() {
-        return 'Talking'
-    }
-}
+// class Person {
+//     talk() {
+//         return 'Talking'
+//     }
+// }
 
 
-const me = new Person ()
-const you = new Person ()
+// const me = new Person ()
+// const you = new Person ()
 
-console.log(Person.prototype);
+// console.log(Person.prototype);
 // console.log(you.talk());
+
+const dude = ['woop', 'wap']
+console.log(dude);
+
+
+const name = 'yousa';
+console.log(name.__proto__);
