@@ -48,9 +48,60 @@
 // console.log(Person.prototype);
 // console.log(you.talk());
 
-const dude = ['woop', 'wap']
-console.log(dude);
+// const dude = ['woop', 'wap']
+// console.log(dude);
 
 
-const name = 'yousa';
-console.log(name.__proto__);
+// const name = 'yousa';
+// console.log(name.__proto__);
+
+
+
+function num2Day(num) {
+    if(num = 1) return 'Monday'
+    if(num = 2) return 'Tuesday'
+    if(num = 3) return 'Wednesday'
+    if(num = 4) return 'Thursday'
+    if(num = 5) return 'Friday'
+    if(num = 6) return 'Saturday'
+    if(num = 7) return 'Sunday'
+    else { return undefined
+    }
+
+}
+
+result1 = num2Day(2)
+result2 = num2Day(3)
+result3 = num2Day(4)
+
+
+
+console.log(result1);
+console.log(result2);
+console.log(result3);
+
+
+// console.log(num2Day(1));
+
+// function num2Day(num) {
+//     class Day{
+//         constructor(num){
+//             this.day = num;
+//         }
+//     }
+//     return Day
+// }
+
+// console.log(Day(1))
+
+// class DayOfWeek {
+//     constructor(num){
+//         this.day = num;
+//     }
+// }
+
+
+// const Day = new DayOfWeek(1)
+
+
+// console.log(Day);
