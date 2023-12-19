@@ -57,28 +57,28 @@
 
 
 
-function num2Day(num) {
-    if(num = 1) return 'Monday'
-    if(num = 2) return 'Tuesday'
-    if(num = 3) return 'Wednesday'
-    if(num = 4) return 'Thursday'
-    if(num = 5) return 'Friday'
-    if(num = 6) return 'Saturday'
-    if(num = 7) return 'Sunday'
-    else { return undefined
-    }
+// function num2Day(num) {
+//     if(num = 1) return 'Monday'
+//     if(num = 2) return 'Tuesday'
+//     if(num = 3) return 'Wednesday'
+//     if(num = 4) return 'Thursday'
+//     if(num = 5) return 'Friday'
+//     if(num = 6) return 'Saturday'
+//     if(num = 7) return 'Sunday'
+//     else { return undefined
+//     }
 
-}
+// }
 
-result1 = num2Day(2)
-result2 = num2Day(3)
-result3 = num2Day(4)
+// result1 = num2Day(2)
+// result2 = num2Day(3)
+// result3 = num2Day(4)
 
 
 
-console.log(result1);
-console.log(result2);
-console.log(result3);
+// console.log(result1);
+// console.log(result2);
+// console.log(result3);
 
 
 // console.log(num2Day(1));
@@ -105,3 +105,74 @@ console.log(result3);
 
 
 // console.log(Day);
+
+
+
+// function removeDupes(nums){
+//     const list = [];
+
+//     for (var i = 0; i < nums.length; i++){
+//        var num = nums[i];
+//        if (!list.includes(num)){
+//         list.push(num)
+//        }
+        
+//     }
+
+//     return [];
+// }
+
+
+
+// const removeDupes = (nums) => {
+
+//     const list = [];
+
+//     for (var i = 0; i < nums.length; i++){
+//        var num = nums[i];
+//        if (!list.includes(num)){
+//         list.push(num)
+//        }
+        
+//     }
+
+//     return [];
+// }
+// const removeDupes = (nums) => {
+
+//     const list = nums.reduce((prev, num) => !prev.includes(num) ? prev.concat(num) : prev, []);
+
+//     return list;
+// }
+
+// const result1 = removeDupes([4,5,4,4,7,5])
+
+// console.log(result1)
+
+
+
+// const test = [1,2,3,4]
+
+// const result = test.reduce((start, num) => start + num, 0);
+
+// console.log(result)
+
+function detectArrayElement(arr, ele){
+    for(var i = 0;i < arr.length;i++){
+        if (arr[i] === ele) return true;
+    }
+    return false;
+
+}
+
+const result1 = detectArrayElement([1,2,3], 1);
+
+console.log(result1)
+
+function isInArray(arr, elem) {
+    // for (let i = 0; i < arr.length; i++) {
+    for (const item of arr) {  
+      if (item === elem) return true;
+    }
+    return false;
+  }
