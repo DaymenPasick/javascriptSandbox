@@ -157,22 +157,48 @@
 
 // console.log(result)
 
-function detectArrayElement(arr, ele){
-    for(var i = 0;i < arr.length;i++){
-        if (arr[i] === ele) return true;
+// function detectArrayElement(arr, ele){
+//     for(var i = 0;i < arr.length;i++){
+//         if (arr[i] === ele) return true;
+//     }
+//     return false;
+
+// }
+
+// const result1 = detectArrayElement([1,2,3], 1);
+
+// console.log(result1)
+
+// function isInArray(arr, elem) {
+//     // for (let i = 0; i < arr.length; i++) {
+//     for (const item of arr) {  
+//       if (item === elem) return true;
+//     }
+//     return false;
+//   }
+
+
+ function altarArray(nums, func) {
+    
+  const resultArray = []
+
+    for(const num of nums) {
+      if(func == 'increment') {
+        resultArray.push(num[i] + 1)
+      }
+      if(func == 'double') {
+        resultArray.push(num[i] * 2)
+      }
+      if(func == 'decrement') {
+        resultArray.push(num[i] - 1)
+      }
+      else {
+        return 'Please enter a valid operator'
+      }
     }
-    return false;
 
-}
 
-const result1 = detectArrayElement([1,2,3], 1);
 
-console.log(result1)
 
-function isInArray(arr, elem) {
-    // for (let i = 0; i < arr.length; i++) {
-    for (const item of arr) {  
-      if (item === elem) return true;
-    }
-    return false;
-  }
+    return resultArray
+ }
