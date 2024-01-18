@@ -178,27 +178,59 @@
 //   }
 
 
- function altarArray(nums, func) {
+//  function altarArray(nums, func) {
     
-  const resultArray = []
+//   const resultArray = []
 
-    for(const num of nums) {
-      if(func == 'increment') {
-        resultArray.push(num[i] + 1)
-      }
-      if(func == 'double') {
-        resultArray.push(num[i] * 2)
-      }
-      if(func == 'decrement') {
-        resultArray.push(num[i] - 1)
-      }
-      else {
-        return 'Please enter a valid operator'
-      }
-    }
-
-
+//     for(const num of nums) {
+//       if(func == 'increment') {
+//         resultArray.push(num[i] + 1)
+//       }
+//       if(func == 'double') {
+//         resultArray.push(num[i] * 2)
+//       }
+//       if(func == 'decrement') {
+//         resultArray.push(num[i] - 1)
+//       }
+//       else {
+//         return 'Please enter a valid operator'
+//       }
+//     }
 
 
-    return resultArray
- }
+
+
+//     return resultArray
+//  }
+
+// Write a function that takes in a number and reverses the order of the digits.
+// Ex:
+// Input: 1234
+// Output:4321
+// Input: 1201
+// Output:1021
+// Input: 4
+// Output: 4
+const reverseDigits = (num) => {
+  //const str = num.toString()
+  const str = String(num)
+  let result = '';
+
+
+  for (let i = str.length - 1; i >= 0; i--){
+    result += str[i]
+  }
+
+  //could also use a regular for loop or even forOf loop
+  // with this as the function { result = str[i] + result} OR result = loopedit + result
+
+  return Number(result);
+};
+
+const output1 = reverseDigits(1234);
+const output2 = reverseDigits(1201);
+const output3 = reverseDigits(4);
+
+console.log(output1);
+console.log(output2);
+console.log(output3);
